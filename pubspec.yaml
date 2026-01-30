@@ -1,0 +1,98 @@
+name: harita_uygulamasi
+description: "TUGA - Yapay Zeka Destekli Seyahat Planlayıcı"
+publish_to: 'none'
+
+# Google Play ve App Store versiyon takibi
+# Markete her yüklemede +1 kısmını artırmalısın (örn: 1.0.1+2)
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- TEMEL & YARDIMCI PAKETLER ---
+  cupertino_icons: ^1.0.8
+  flutter_dotenv: ^6.0.0      # API anahtarlarını gizlemek için (.env)
+  shared_preferences: ^2.5.4  # Basit verileri (Ayarlar, Onboarding durumu) saklamak için
+  uuid: ^4.3.3                # Google Places API Session Token yönetimi için (Maliyet düşürücü)
+  http: ^1.6.0                # API istekleri
+  intl: ^0.20.2               # Tarih ve saat formatlama
+  url_launcher: ^6.3.2        # Web sitelerini veya harita linklerini açmak için
+  path_provider: ^2.1.2       # Dosya yollarına erişim (Önbellek vb. için gerekli)
+  permission_handler: ^11.3.0 # 🔥 KRİTİK: İzinleri (Konum, Galeri) kullanıcıdan istemek için
+
+  # --- FIREBASE (Backend & Analytics) ---
+  firebase_core: ^4.2.1
+  firebase_auth: ^6.1.2       # Giriş işlemleri
+  cloud_firestore: ^6.1.0     # Veritabanı
+  firebase_storage: ^13.0.4   # Profil fotosu ve gezi resimleri depolama
+  firebase_crashlytics: ^5.0.7 # Hata takibi (Uygulama neden çöktü?)
+  firebase_app_check: ^0.4.1+2 # Güvenlik katmanı
+
+  # --- HARİTA & LOKASYON ---
+  google_maps_flutter: ^2.14.0
+  geolocator: ^14.0.2         # Kullanıcının anlık konumu
+  geocoding: ^3.0.0           # 🔥 EKLENDİ: Koordinattan Adres bulma (Reverse Geocoding)
+
+  # --- GÖRSEL & UI ---
+  google_fonts: ^8.0.0
+  cached_network_image: ^3.4.1 # Resimleri internetten çekip önbelleğe alır (Hız için şart)
+  image_picker: ^1.2.1         # Galeriden resim seçme
+  flutter_svg: ^2.0.17         # 🔥 EKLENDİ: Yüksek kaliteli vektörel ikonlar için
+  fl_chart: ^1.1.1             # İstatistik grafikleri
+  animate_do: ^4.2.0           # Giriş animasyonları (FadeIn, SlideIn vb.)
+  flutter_localization: ^0.3.3 # Çoklu dil desteği altyapısı
+  webview_flutter: ^4.13.0     # Uygulama içinde web sayfası açma
+
+  # --- GİRİŞ & SATIN ALMA (MONETIZATION) ---
+  google_sign_in: ^6.2.1
+  sign_in_with_apple: ^6.1.0   # iOS için zorunlu
+  purchases_flutter: ^9.10.7   # RevenueCat (Premium üyelik yönetimi)
+
+  # --- AI (Yapay Zeka - Gemini) ---
+  google_generative_ai: ^0.4.7 # Gemini API entegrasyonu
+  crypto: ^3.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # Geliştirme araçları
+  flutter_launcher_icons: ^0.14.4 # Uygulama ikonu oluşturucu
+  flutter_native_splash: ^2.4.7   # Açılış ekranı oluşturucu
+
+flutter:
+  uses-material-design: true
+
+  # Asset tanımlamaları
+  assets:
+    - .env                 # API Key'lerin olduğu dosya
+    - assets/icons/        # İkon klasörünü tanıttık
+    - assets/images/       # Resim klasörünü tanıttık
+    # Eğer özel font eklediysen buraya 'fonts/' da eklemelisin.
+
+# --- KONFİGÜRASYONLAR ---
+
+# 1. Uygulama İkonu Ayarları
+# Terminalde çalıştır: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/ic_foreground.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF" 
+  adaptive_icon_foreground: "assets/images/ic_foreground.png"
+
+# 2. Splash (Açılış) Ekranı Ayarları
+# Terminalde çalıştır: dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#0066CC"
+  image: "assets/images/ic_foreground.png"
+  android_12:
+    image: "assets/images/ic_foreground.png"
+    color: "#0066CC"
+    icon_background_color: "#0066CC"
+    fullscreen: true

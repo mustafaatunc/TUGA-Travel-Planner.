@@ -1,0 +1,35 @@
+buildscript {
+    // ✅ RevenueCat hatasını çözen Kotlin sürümü
+    ext.kotlin_version = '2.1.0' 
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        // Gradle sürümü (Flutter sürümüne göre değişebilir ama 7.3.0 güvenlidir)
+        classpath 'com.android.tools.build:gradle:7.3.0'
+        
+        // Kotlin Gradle Eklentisi (Yukarıdaki sürümü kullanır)
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
