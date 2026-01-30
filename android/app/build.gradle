@@ -34,7 +34,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.example.harita_uygulamasi" 
+    namespace "com.example.TUGA" 
     compileSdkVersion 36 
     ndkVersion flutter.ndkVersion
 

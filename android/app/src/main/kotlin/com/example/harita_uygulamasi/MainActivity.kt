@@ -1,4 +1,4 @@
-package com.example.harita_uygulamasi
+package com.example.TUGA
 
 import io.flutter.embedding.android.FlutterActivity
 

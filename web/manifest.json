@@ -1,6 +1,6 @@
 {
-    "name": "harita_uygulamasi",
-    "short_name": "harita_uygulamasi",
+    "name": "TUGA",
+    "short_name": "TUGA",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

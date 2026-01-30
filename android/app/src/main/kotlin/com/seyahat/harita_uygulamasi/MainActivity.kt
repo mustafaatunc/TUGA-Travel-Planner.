@@ -1,4 +1,4 @@
-package com.seyahat.harita_uygulamasi
+package com.seyahat.TUGA
 
 import io.flutter.embedding.android.FlutterActivity
 

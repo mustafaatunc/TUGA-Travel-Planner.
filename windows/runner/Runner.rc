@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "harita_uygulamasi" "\0"
+            VALUE "FileDescription", "TUGA" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "harita_uygulamasi" "\0"
+            VALUE "InternalName", "TUGA" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "harita_uygulamasi.exe" "\0"
-            VALUE "ProductName", "harita_uygulamasi" "\0"
+            VALUE "OriginalFilename", "TUGA.exe" "\0"
+            VALUE "ProductName", "TUGA" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
