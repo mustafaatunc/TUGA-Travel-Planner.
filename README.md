@@ -33,15 +33,15 @@ Modern **Flutter** mimarisi ile geliştirilmiş olup, **Google Gemini AI** enteg
 ### 3. Detaylar ve Araçlar
 | Gezi Detayı & Rota | Seyahat Araçları |
 |:---:|:---:|
-| ![Trip Detail](https://github.com/user-attachments/assets/19649317-f7d8-46ac-be11-36f1ce0200a1)
-) | ![Tools](https://github.com/user-attachments/assets/605e068d-08b0-46ed-b474-150a69e79494)
+| ![Trip Detail](https://github.com/user-attachments/assets/19649317-f7d8-46ac-be11-36f1ce0200a1)   | ![Tools](https://github.com/user-attachments/assets/605e068d-08b0-46ed-b474-150a69e79494)
+) 
 ) |
 
 ### 4. Profil ve Favoriler
 | Profil & Ayarlar | Favorilerim |
 |:---:|:---:|
-| ![Profile](https://github.com/user-attachments/assets/851cdd31-73c5-48da-8e95-6e76faeb1867)
-) | ![Favorites](https://github.com/user-attachments/assets/4a19fc61-87cc-47c1-b58c-9e4e8ba9e458)
+| ![Profile](https://github.com/user-attachments/assets/851cdd31-73c5-48da-8e95-6e76faeb1867)       | ![Favorites](https://github.com/user-attachments/assets/4a19fc61-87cc-47c1-b58c-9e4e8ba9e458)
+) 
 ) |
 
 ---
