@@ -1,7 +1,6 @@
 # TUGA
 
-A new Flutter project.
-
+Seyahat Planlaması üzerine tasarlanmış,içerisinde birçok materyali barındıran,turistik yerleri ve tatil avantajlarını da barındıran,halen geliştirilmekte olan mobil seyahat uygulamasıdır.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
