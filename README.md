@@ -74,5 +74,6 @@ Bu projeyi yerel ortamınızda çalıştırmak için:
 
 ## 📞 İletişim
 
-Geliştirici: **Mustafa Tunç** |
+Geliştirici: **Mustafa Tunç** 
+
 📧 **E-posta:** [mustafatunc423@gmail.com](mailto:mustafatunc423@gmail.com)
