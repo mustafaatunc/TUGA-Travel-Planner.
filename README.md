@@ -80,4 +80,4 @@ Bu projeyi yerel ortamınızda çalıştırmak için:
 ## 📞 İletişim
 
 Geliştirici: **Mustafa Tunç**
-[E-posta](mustafatunc423@gmail.com)
+[E-posta](mailto:mustafatunc423@gmail.com)
